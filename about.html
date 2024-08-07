@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravya | About Me</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #596235;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 50px;
+            background-color: #cdcbd6;
+            gap: 20px; 
+            height: 100vh;
+        }
+
+        .about .content {
+            display: flex;
+            text-align: left;
+            max-width: 850px;
+            color: #777;
+            flex: 1; 
+        }
+        .about h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #596235;
+        }
+
+        .about h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Nunito', serif;
+            font-weight: bold; 
+            color: #596235;
+        }
+        .about p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: black;
+        }
+        .about p.email-place {
+            color: #596235;
+            font-weight: bold;
+            font-family: 'Nunito', serif;
+        }
+        .about p a {
+            color: #d96846; 
+        }
+        .about a {
+            color: #d96846;
+            text-decoration: none;
+        }
+        .about a:hover {
+            text-decoration: underline;
+        }
+        .about .resume-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d96846;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .about .resume-btn:hover {
+            background-color: #c75639;
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+
+        /* Media Queries for mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            .about {
+                padding: 30px 20px;
+            }
+            .about .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about h1 {
+                font-size: 28px;
+            }
+            .about h2 {
+                font-size: 20px;
+            }
+            .about p {
+                font-size: 16px;
+            }
+            .about .resume-btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .about {
+                padding: 20px 10px;
+            }
+            .about h1 {
+                font-size: 24px;
+            }
+            .about h2 {
+                font-size: 18px;
+            }
+            .about p {
+                font-size: 14px;
+            }
+            .about .resume-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sravya</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="about">
+        <h1>About Me</h1>
+        <div class="content">
+            <div class="text-container">
+                <h2>I'm Sravya <br>Computer Science and Engineering Student</h2>
+                <p>As a motivated and proactive individual, I am eager to embark on my career path, continuously learning, honing my skills, and contributing my knowledge. I am enthusiastic about technology and dedicated to applying my skills and knowledge to real-world challenges. My involvement in student organizations and volunteer activities underscores my commitment to both professional and personal growth.</p>
+                <p class="email-place">Email: <a href="mailto:srvyk3@gmail.com">srvyk3@gmail.com</a></p>
+                <p class="email-place">Place: Vijayawada, India - 520001</p>
+                <center><a href="Resume.pdf" class="resume-btn">Resume</a></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sravya | Education</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #cdcbd6;
+            margin: 0;
+            padding: 0;
+        }
+        .hd {
+            padding: 15px;
+            text-align: center;
+            margin: 30px auto;
+            font-family: 'Poppins',serif;
+            color: #596235;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .education {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            width: 80%;
+            max-width: 800px;
+        }
+        .education img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        .education .details {
+            text-align: left;
+        }
+        .education h3 {
+            color: #d96846;
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+        .education p {
+            color: #596235;
+            margin-bottom: 10px;
+            font-family: 'Nunito';
+        }
+        .education span {
+            color: #596235;
+            font-family: 'Nunito';
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px) {
+            .education {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .education img {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100px;
+                height: 100px;
+            }
+            .education .details {
+                text-align: center;
+            }
+            .education h3 {
+                font-size: 18px;
+            }
+            .education p {
+                font-size: 14px;
+            }
+            .education span {
+                font-size: 12px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .education img {
+                width: 80px;
+                height: 80px;
+            }
+            .education h3 {
+                font-size: 16px;
+            }
+            .education p {
+                font-size: 12px;
+            }
+            .education span {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sravya</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="hd">My Education</h1>
+    <div class="container">
+        <div class="education">
+            <img src="images/pvpsit.png" alt="College">
+            <div class="details">
+                <h3>Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada</h3>
+                <p><strong>B.Tech in CSE</strong></p>
+                <span>CGPA: 9.14/10</span><br>
+                <span>2021 - 2025</span>
+            </div>
+        </div>
+        <div class="education">
+            <img src="images/srichaitanya.png" alt="School 2">
+            <div class="details">
+                <h3>Sri Chaitanya Junior College, Vijayawada</h3>
+                <p><strong>Intermediate</strong></p>
+                <span>Percentage: 97.5%</span><br>
+                <span>2019 - 2021</span>
+            </div>
+        </div>
+        <div class="education">
+            <img src="images/svv.png" alt="School 1">
+            <div class="details">
+                <h3>Sri Vijnana Vihara English Medium High School, Vijayawada</h3>
+                <p><strong>SSC</strong></p>
+                <span>Grade: 10/10</span><br>
+                <span>2018 - 2019</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

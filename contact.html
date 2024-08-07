@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sravya | Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #cdcbd6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        .contact-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #596235;
+        }
+        .contact-form p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #596235;
+            outline: none;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #596235;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #d96846;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+            .contact-form h1 {
+                font-size: 24px;
+            }
+            .contact-form p {
+                font-size: 14px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .contact-form button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .contact-form h1 {
+                font-size: 20px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 8px;
+                font-size: 12px;
+            }
+            .contact-form button {
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sravya</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact-form">
+            <h1>Contact Me 👋</h1>
+    
+            <form action="mailto:srvyk3@example.com" method="post" enctype="text/plain">
+                <input type="text" name="FullName" placeholder="Full Name *" required>
+                <input type="email" name="Email" placeholder="Email *" required>
+                <textarea name="Message" placeholder="Message *" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

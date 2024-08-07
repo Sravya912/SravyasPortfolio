@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravya | Skills</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #cdcbd6;
+        }
+        .container {
+            padding: 50px;
+            text-align: center;
+            height: 100vh;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-family: 'Poppins';
+            color: #596235;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill {
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+            width: 220px;
+            height: 200px;
+        }
+        .skill img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        .skill:hover {
+            transform: scale(1.05);
+        }
+        .skill p {
+            display: block;
+            color: #d96846;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .skill a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+                height: auto;
+            }
+            .skills-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .skill {
+                width: 90%;
+                height: auto;
+            }
+            .skill img {
+                width: 80px;
+                height: 80px;
+            }
+            .skill p {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .container h1 {
+                font-size: 24px;
+            }
+            .skill {
+                width: 100%;
+                height: auto;
+                margin: 5px;
+            }
+            .skill img {
+                width: 70px;
+                height: 70px;
+            }
+            .skill p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sravya</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 style="margin-bottom: 40px;">I'm good at</h1>
+        <div class="skills-grid">
+            <div class="skill">
+                <img src="images/C.png" alt="C">
+                <p>C</p>
+            </div>
+            <div class="skill">
+                <img src="images/C++.png" alt="C++">
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <img src="images/JS.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="images/MySQL.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <img src="images/HTML.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="images/CSS.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="images/Python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="images/Java.png" alt="Java">
+                <p>Java</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
